@@ -30,12 +30,12 @@ def node():
 	goal= PoseStamped()
 	time.sleep(2)
 	print("dovrebbe fare cose ora")
-	goal.pose.position.y=1.5
+	goal.pose.position.x=0.0
+	goal.pose.position.y=0.0
 	pub.publish(goal)
-	print("pubblicato 1.5")
+	print("pubblicato 1")
 	time.sleep(10)
-	goal.pose.position.y=-1.0
-	pub.publish(goal)
+
 
 if __name__ == '__main__':
 	try:
