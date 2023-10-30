@@ -30,30 +30,30 @@ def node():
 	goal= PoseStamped()
 	time.sleep(2)
 	print("dovrebbe fare cose ora")
-	goal.pose.position.x=-2
-	goal.pose.position.y=-2
+	goal.pose.position.x=-1.35
+	goal.pose.position.y=-1.35
 	pub.publish(goal)
 	print("pubblicato 1")
 	time.sleep(10)
 	goal.pose.position.x=0.0
-	goal.pose.position.y=3.0
+	goal.pose.position.y=2.0
 	pub.publish(goal)
 	print("pubblicato 2")
 	time.sleep(10)
-	goal.pose.position.x=2.0
-	goal.pose.position.y=-2.0
+	goal.pose.position.x=1.35
+	goal.pose.position.y=-1.35
 	pub.publish(goal)
 	print("pubblicato 3")
-	goal.pose.position.x=-3.0
-	goal.pose.position.y=1.0
+	goal.pose.position.x=-2.0
+	goal.pose.position.y=0.65
 	pub.publish(goal)
 	print("pubblicato 4")
-	goal.pose.position.x=3.0
-	goal.pose.position.y=1.0
+	goal.pose.position.x=2.0
+	goal.pose.position.y=0.65
 	pub.publish(goal)
 	print("pubblicato 5")
-	goal.pose.position.x=-2.0
-	goal.pose.position.y=-2.0
+	goal.pose.position.x=-1.35
+	goal.pose.position.y=-1.35
 	pub.publish(goal)
 	print("pubblicato 1")
 	
